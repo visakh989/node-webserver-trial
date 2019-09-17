@@ -14,12 +14,15 @@ hbs.registerHelper('hbsGetCurrYear', ()=>{
 })
 
 app.get('/', (req, res) =>{
-    res.send({
-        name:'visakh',
-        likes:[
-            'biking',
-            'cities'
-        ]
+    // res.send({
+    //     name:'visakh',
+    //     likes:[
+    //         'biking',
+    //         'cities'
+    //     ]
+    // });
+    res.render('pagetemplate.hbs',{
+        hbsPageName: 'About'
     });
 });
 
