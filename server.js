@@ -32,6 +32,12 @@ app.get('/about', (req, res)=>{
     });
 });
 
+app.get('/projects', (req, res)=>{
+    res.render('pagetemplate.hbs',{
+        hbsPageName: 'Projects'
+    });
+});
+
 app.listen(port, ()=>{
     console.log(`server is running ${port}`);
 });
